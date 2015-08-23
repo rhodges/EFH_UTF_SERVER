@@ -1,0 +1,20 @@
+#server unix:///usr/local/apps/PEW-EFH/deploy/socket;
+
+server {
+	listen 80;
+	server_name TODO; 
+
+        location /tiles/ {
+            rewrite ^/tiles/(.*)  /$1 break;
+            uwsgi_pass unix:///var/run/uwsgi/app/tilestache/socket;
+            include uwsgi_params;
+            add_header 'Access-Control-Allow-Origin' '*';
+            add_header 'Access-Control-Allow-Headers' 'X-Requested-With';
+        }
+
+	location / {
+                uwsgi_pass unix:///tmp/efh-socket;
+                include /usr/local/apps/PEW-EFH/deploy/uwsgi_params;
+	}
+}
+
