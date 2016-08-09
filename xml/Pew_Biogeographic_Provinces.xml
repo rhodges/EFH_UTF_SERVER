@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
+  <Parameter name="center">0,0,2</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="interactivity_layer">biogeographicprovinc</Parameter>
+  <Parameter name="interactivity_fields">Province</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="legend"><![CDATA[<div class='my-legend'>
+<div class='legend-title'>Biogeographic Provinces</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#00dfff;'></span>Salish Sea</li>
+    <li><span style='background:#00ff1c;'></span>Northern (Cape Flattery to Cape Mendocino)</li>
+    <li><span style='background:#ffa700;'></span>Central (Cape Mendocino to Point Conception)</li>
+    <li><span style='background:#0094ff;'></span>Southern (Point Conception to US/Mex border)</li>
+  </ul>
+</div>
+<div class='legend-source'>Source: <a href="#link to source">National Marine Fisheries Service</a></div>
+</div>
+
+<style type='text/css'>
+  .my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+</style>]]></Parameter>
+  <Parameter name="template"><![CDATA[{{#__location__}}{{/__location__}}{{#__teaser__}}{{{Province}}}{{/__teaser__}}{{#__full__}}{{/__full__}}]]></Parameter>
+</Parameters>
+
+
+<Style name="biogeographicprovinc" filter-mode="first" >
+  <Rule>
+    <Filter>([Province] = 'Southern (Point Conception to US/Mex border)')</Filter>
+    <LineSymbolizer stroke="#4d4d4d" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#0094ff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Province] = 'Central (Cape Mendocino to Point Conception)')</Filter>
+    <LineSymbolizer stroke="#4d4d4d" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#ffa700" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Province] = 'Northern (Cape Flattery to Cape Mendocino)')</Filter>
+    <LineSymbolizer stroke="#4d4d4d" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#00ff1c" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Province] = 'Salish Sea')</Filter>
+    <LineSymbolizer stroke="#4d4d4d" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#00dfff" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke="#4d4d4d" stroke-width="0.5" />
+    <PolygonSymbolizer fill-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="biogeographicprovinc"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>biogeographicprovinc</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/usr/local/apps/tilestache/data/Biogeographic_provinces.shp]]></Parameter>
+       <Parameter name="id"><![CDATA[biogeographicprovinc]]></Parameter>
+       <Parameter name="project"><![CDATA[Pew_Biogeographic_Provinces]]></Parameter>
+       <Parameter name="srs"><![CDATA[]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
