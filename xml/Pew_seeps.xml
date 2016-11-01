@@ -6,14 +6,65 @@
   <Parameter name="bounds">-180,-85.05112877980659,180,85.05112877980659</Parameter>
   <Parameter name="center">0,0,2</Parameter>
   <Parameter name="format">png</Parameter>
+  <Parameter name="interactivity_layer">undefined</Parameter>
+  <Parameter name="interactivity_fields"></Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="legend"><![CDATA[<div class='my-legend'>
+<div class='legend-title'>Methane Plumes</div>
+<div class='legend-scale'>
+  <ul class='legend-labels'>
+    <li><span style='background:#f45;'></span>Seeps</li>
+   </ul>
+</div>
+<div class='legend-source'>Source: <a href="#link to source">College of Earth, Ocean, and Atmospheric Sciences & Department of Microbiology, College of Science Oregon State University</a></div>
+</div>
+
+<style type='text/css'>
+  .my-legend .legend-title {
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    border-radius: 50%/50%;
+    float: left;
+    height: 10px;
+    width: 10px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #5e1087;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+</style>]]></Parameter>
 </Parameters>
 
 
 <Style name="seepsmerlejuly27" filter-mode="first" >
   <Rule>
-    <MarkersSymbolizer width="12" fill="#ff4455" stroke="#881133" allow-overlap="true" />
+    <MarkersSymbolizer width="6" fill="#ff4455" stroke="#881133" allow-overlap="true" />
   </Rule>
 </Style>
 <Layer name="seepsmerlejuly27"
