@@ -11,17 +11,17 @@
 </Parameters>
 
 
-<Style name="depthzonesshelf" filter-mode="first" >
+<Style name="rcasocalislands" filter-mode="first" >
   <Rule>
-    <LineSymbolizer stroke="#5f615e" stroke-width="0.5" />
-    <PolygonSymbolizer fill-opacity="1" fill="#3eed77" />
+    <LineSymbolizer stroke="#878e86" stroke-width="0.5" />
+    <PolygonSymbolizer fill-opacity="1" fill="#d9e930" />
   </Rule>
 </Style>
-<Layer name="depthzonesshelf"
+<Layer name="rcasocalislands"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>depthzonesshelf</StyleName>
+    <StyleName>rcasocalislands</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[/usr/local/apps/tilestache/data/Depth_Zones_shelf_reg.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[/usr/local/apps/tilestache/data/RCA_SoCal_islands.shp]]></Parameter>
        <Parameter name="type"><![CDATA[shape]]></Parameter>
     </Datasource>
   </Layer>
