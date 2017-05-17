@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="bounds">-131.8359,29.993,-116.499,49.2678</Parameter>
+  <Parameter name="center">-124.3652,40.0108,6</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="interactivity_layer">undefined</Parameter>
+  <Parameter name="interactivity_fields"></Parameter>
+  <Parameter name="minzoom">6</Parameter>
+  <Parameter name="maxzoom">12</Parameter>
+  <Parameter name="name"><![CDATA[serdp_swfsc_cce_Dde_i_u_d]]></Parameter>
+  <Parameter name="description"><![CDATA[Short-Beaked Common Dolphin Density (July - Nov) Habitat-Based Density Heat Map]]></Parameter>
+  <Parameter name="attribution"><![CDATA[Barlow, Ferguson, et al. 2009]]></Parameter>
+</Parameters>
+
+
+<Style name="serdpswfsccce" filter-mode="first" >
+  <Rule>
+    <Filter>([Dde_i_u_d] &lt;= 0.622302)</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#66ffe3" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Dde_i_u_d] &lt;= 1.17241)</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#52ccb6" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Dde_i_u_d] &lt;= 1.722521)</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#3d9988" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Dde_i_u_d] &lt;= 2.27263)</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#29665b" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <Filter>([Dde_i_u_d] &lt;= 2.822739)</Filter>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill="#14332e" fill-opacity="1" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill-opacity="1" />
+  </Rule>
+</Style>
+<Layer name="serdpswfsccce"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>serdpswfsccce</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/usr/local/apps/tilestache/data/serdp_swfsc_cce.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
