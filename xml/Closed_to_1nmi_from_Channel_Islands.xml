@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" maximum-extent="-20037508.34,-20037508.34,20037508.34,20037508.34">
+
+<Parameters>
+  <Parameter name="bounds">-129.5,30,-116.5,49.25</Parameter>
+  <Parameter name="center">-119.2429,33.5345,8</Parameter>
+  <Parameter name="format">png</Parameter>
+  <Parameter name="minzoom">6</Parameter>
+  <Parameter name="maxzoom">12</Parameter>
+  <Parameter name="name"><![CDATA[Closed_to_1nmi_from_Channel_Islands]]></Parameter>
+  <Parameter name="description"><![CDATA[1 Nautical Mile Closure from Channel Islands drift gillnet closure area]]></Parameter>
+  <Parameter name="attribution"><![CDATA[NMFS]]></Parameter>
+</Parameters>
+
+
+<Style name="closedto1nmifromchan" filter-mode="first" >
+  <Rule>
+    <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
+    <PolygonSymbolizer fill-opacity="0.4" fill="#0e9144" />
+  </Rule>
+</Style>
+<Layer name="closedto1nmifromchan"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>closedto1nmifromchan</StyleName>
+    <Datasource>
+       <Parameter name="file"><![CDATA[/usr/local/apps/tilestache/data/Closed_to_1nmi_from_Channel_Islands.shp]]></Parameter>
+       <Parameter name="type"><![CDATA[shape]]></Parameter>
+    </Datasource>
+  </Layer>
+
+</Map>
