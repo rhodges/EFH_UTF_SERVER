@@ -17,7 +17,7 @@
 <Style name="closedmay1aug1475nmi" filter-mode="first" >
   <Rule>
     <LineSymbolizer stroke-linejoin="round" stroke="#5f615e" stroke-width="0.5" />
-    <PolygonSymbolizer fill-opacity="0.4" fill="#0e9144" />
+    <PolygonSymbolizer fill-opacity="1" fill="#0e9144" />
   </Rule>
 </Style>
 <Layer name="closedmay1aug1475nmi"
